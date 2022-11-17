@@ -5,7 +5,7 @@ cpu = input('Digite seu Processador (i5, i7, Celeron, AMD): ')
 gen = input('Digite a geração/outras configs do seu Processador: ')
 ram = input('Digite a quantidade de RAM do seu PC (em GB): ')
 
-max_value = 50000
+max_value = 100000
 
 cont = 0
 prime = 0
@@ -70,6 +70,7 @@ print('CPU: ' + cpu)
 print('    ' + gen)
 print('RAM: ' + ram + ' GB')
 print(' ')
-print('Tempo 1 (com print): ' + str(time1))
-print('Tempo 2 (sem print): ' + str(time2))
+print('Tempo 1 (com print): ' + str(time1) + ' segundos')
+print('Tempo 2 (sem print): ' + str(time2) + ' segundos')
+print(' ')
 
