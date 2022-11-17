@@ -1,7 +1,11 @@
 import time
 import math
 
-max_value = 100000
+cpu = input('Digite seu Processador (i5, i7, Celeron, AMD): ')
+gen = input('Digite a geração/outras configs do seu Processador: ')
+ram = input('Digite a quantidade de RAM do seu PC (em GB): ')
+
+max_value = 50000
 
 cont = 0
 prime = 0
@@ -60,6 +64,12 @@ tm2 = time.perf_counter()
 print(primes[max_value-1])
 time2 = tm2-tm1
 print(f'Tempo total: {tm2-tm1:0.2f} seconds') 
-print('time1 (com print): ' + str(time1))
-print('time2: (sem print) ' + str(time2))
+print('------------------------------------------------------')
+print(' ')
+print('CPU: ' + cpu)
+print('    ' + gen)
+print('RAM: ' + ram + ' GB')
+print(' ')
+print('Tempo 1 (com print): ' + str(time1))
+print('Tempo 2 (sem print): ' + str(time2))
 
